@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('flipButton').addEventListener('click', function() {
     const coin = document.getElementById('coin');
     const result = document.getElementById('result');
+    result.textContent = '';
     coin.classList.add('flipping');
     setTimeout(() => {
       coin.classList.remove('flipping');
